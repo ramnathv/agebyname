@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+rawdata/names/*
+rawdata/namesbystate/*
+rawdata/02HS0013.xls
+rawdata/births_census.csv
+README.html
+

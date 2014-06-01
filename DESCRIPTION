@@ -1,0 +1,9 @@
+Package: agebyname
+Type: Package
+Title: Explore name vs. age relationship based on data from SS and Census
+Version: 0.1
+Date: 2014-05-31
+Author: Ramnath Vaidyanathan
+Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
+License: CC0
+LazyData: true
