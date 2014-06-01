@@ -73,6 +73,17 @@ estimates %>%
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
+You can also use this package to generate an interactive Shiny application that allows people to explore the age distribution of names. An example app is available in the package.
+
+
+```r
+app = system.file('example1', package = 'agebyname')
+runApp(app)
+```
+
+![shinyapp1](figure/shinyapp1.png)
+
+
 
 #### Data
 
