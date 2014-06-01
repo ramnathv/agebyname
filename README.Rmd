@@ -71,6 +71,20 @@ runApp(app)
 
 ![shinyapp1](figure/shinyapp1.png)
 
+One can also use the [rMaps](http://rmaps.github.io) package to generate an interactive choropleth map of the relative popularity of a name.
+
+```{r eval = F}
+library(rMaps)
+bnames_by_state %>%
+  group_by(state, year, sex) %>%
+  mutate(prop = n/sum(n)) %>%
+  filter(year %in% 2000:2005, name == 'Anna', sex == 'F') %>%
+  ichoropleth(prop ~ state, data = ., animate = 'year')
+```
+
+![ichoropleth1](figure/ichoropleth1.png)
+
+
 
 
 #### Data
