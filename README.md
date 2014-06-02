@@ -5,12 +5,13 @@
 
 This R package is inspired by [Nate Silver's](https://twitter.com/FiveThirtyEight) recent article on [How to Tell Someone's Age When All you Know is Her Name](http://fivethirtyeight.com/features/how-to-tell-someones-age-when-all-you-know-is-her-name/). It allows one to (almost) replicate the analysis done in the article, and provides more extensive features.
 
-To get started, you can install the package from github using `devtools`.
+To get started, you can install the package from github using `devtools`. You will also need to install the latest version of `dplyr`, also from `github`.
 
 
 
 ```r
 library(devtools)
+install_github("hadley/dplyr")
 install_github("ramnathv/agebyname")
 ```
 
@@ -78,7 +79,7 @@ You can also use this package to generate an interactive Shiny application that 
 
 ```r
 app = system.file('example1', package = 'agebyname')
-runApp(app)
+shiny::runApp(app)
 ```
 
 ![shinyapp1](figure/shinyapp1.png)
